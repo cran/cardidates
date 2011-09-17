@@ -1,3 +1,4 @@
+\encoding{latin1}
 \name{cardidates-package}
 \alias{cardidates-package}
 \alias{cardidates}
@@ -13,8 +14,8 @@ mass developments) in ecological time series using fitted Weibull-type functions
 \tabular{ll}{
 Package: \tab cardidate\cr
 Type: \tab Package\cr
-Version: \tab 0.4-1\cr
-Date: \tab 2011-09-17\cr
+Version: \tab 0.4-2\cr
+Date: \tab 2012-08-30\cr
 License: \tab GNU Public License 2 or above\cr
 }
 Phenology and seasonal succession in aquatic ecosystems are strongly 
@@ -38,7 +39,7 @@ if you feel that this package should be generalized to other processes.
 }
 \author{
   Susanne Rolinski (original algorithm),
-  Thomas Petzoldt and René Sachse (package and documentation).
+  Thomas Petzoldt and Ren\enc{é}{e} Sachse (package and documentation).
 
 Maintainer: Thomas Petzoldt <thomas.petzoldt@tu-dresden.de>
 }

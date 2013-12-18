@@ -1,4 +1,4 @@
-a0ff7dcb8716fda816ba402852639e12 *DESCRIPTION
+9b17ff6c0332fd66919f77f58c60f8b7 *DESCRIPTION
 4a31e9069551d73bcb184a2bb8896041 *NAMESPACE
 68d3d6e673fab977baf7e98c2f7c70cc *R/CDW.R
 17407b3ce4dd4f1afeb7305fe57f8e1a *R/CDWa.R
@@ -18,15 +18,13 @@ f218dfe34a7d56f1e9d60453d6322fbf *R/plot.cardiMetacdw.R
 89862e33643997088cae6b670baa7908 *R/plot.cardiPeakwindow.R
 ae10a7c9c466f6674b9e57d94057313a *R/summary.cardiFit.R
 a5760a85160f98da7591b806e9334949 *R/summary.cardiMetacdw.R
-93060a09131f97a8669b897ce2a56d6c *data/carditest.txt.gz
-853026c3fee9fd64787769cbe8e2ade9 *inst/CITATION
-6fe83fb283d9b8e4528f12e2c94f91f3 *inst/NEWS
-954ced282c02125db098edbb5bf7d147 *inst/doc/Z.cls
-bb63547ce81ac81865cab4ca89a6bdf2 *inst/doc/cardidates.bib
+f65c912d130185833a079446d604aa5a *data/carditest.txt.gz
+f39dff40868309150d03489832afce58 *inst/CITATION
+1010d8deb31f357c78297e572cf04aca *inst/doc/vignette.R
 0b294ed9b2e2f50b19e0bc5586d2cb6f *inst/doc/vignette.Rnw
-98ad16d02cbf792f88db84a656915f73 *inst/doc/vignette.pdf
+a3070a38a8ec601aef4c61b842114ad0 *inst/doc/vignette.pdf
 7b5a853767bd059ebfd8943c44968f9a *man/CDW.Rd
-ea9a59927dbd6236b5480bda14234787 *man/cardidates-package.Rd
+219b52b259e12a77f52dba8a296fec29 *man/cardidates-package.Rd
 b57f942f1ed116597da0822ea7f56521 *man/carditest.Rd
 73fe06fc31021e9a9e472253fc8d6c33 *man/fitweibull.Rd
 7e1a59e0533ad98952ee7fecf5e5b0ff *man/merge.cardiMetacdw.Rd
@@ -39,3 +37,6 @@ c7eba1d2332715687f12bdde748e1121 *man/summary.cardiFit.Rd
 b51f7a4c38f0f952fdc6124075ac07b9 *man/weibull4.Rd
 91a11bc0080974aad9457f17894d7ef7 *man/weibull6.Rd
 671be97ef1f84d284f40c0f4a5fab237 *man/weibull7.Rd
+954ced282c02125db098edbb5bf7d147 *vignettes/Z.cls
+bb63547ce81ac81865cab4ca89a6bdf2 *vignettes/cardidates.bib
+0b294ed9b2e2f50b19e0bc5586d2cb6f *vignettes/vignette.Rnw

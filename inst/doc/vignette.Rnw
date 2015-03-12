@@ -1,10 +1,10 @@
-\documentclass[11pt]{Z}
+\documentclass[11pt,nojss]{jss}
 
 \SweaveOpts{engine=R,eps=FALSE}
 
 
 %% need no \usepackage{Sweave.sty}
-\DeclareGraphicsExtensions{.pdf, .eps, .png}
+\DeclareGraphicsExtensions{.pdf, .png}
 
 \usepackage{amsmath,amssymb,graphicx,color,fancyvrb}
 \usepackage{textcomp}%has degree celsius
@@ -23,6 +23,14 @@
 \title{Quickstart Manual for Package \pkg{cardidates}}
 %\VignetteIndexEntry{cardidates Quickstart Manual}
 
+\Address{
+  Thomas Petzoldt\\
+  Institut f\"ur Hydrobiologie\\
+  Technische Universit\"at Dresden\\
+  01062 Dresden, Germany\\
+  E-mail: \email{thomas.petzoldt@tu-dresden.de}\\
+  URL: \url{http://tu-dresden.de/Members/thomas.petzoldt/}
+}
 
 
 \Abstract{ The \pkg{cardidates} package provides methods for identifying peaks and
@@ -57,7 +65,7 @@ means that it is not necessarily important to get good estimates for
 one particular time series but to get reproducible results
 independently of the person who performs the analysis.
 
-The proposed methods were developed within the 
+The proposed methods were developed within the
 AQUASHIFT\footnote{\url{http://www.ifm-geomar.de/?id=1985&L=1}} research
 program and used to determine the beginning, maximum and end of the
 spring mass development of phytoplankton in different lakes and water
@@ -74,6 +82,8 @@ The methodology may also be useful for other ecological time series
 hesitate to contact the authors if you feel that this package should
 be generalized to other processes.
 
+\newpage
+
 \section{Pre-requisites}
 
 You need the following software:
@@ -87,11 +97,12 @@ You need the following software:
   \proglang{R} archive network:
 \begin{Sinput}
 > install.packages("cardidates")
-\end{Sinput}   
-  
-\item \pkg{cardidates} requires two contributed packages named
-  \pkg{boot} and \pkg{pastecs} \citep{boot-package,pastecs-package}
-  which are installed automatically when installing the package
+\end{Sinput}
+
+\item \pkg{cardidates} requires three contributed packages,
+  \pkg{boot} and \pkg{pastecs} and \pkg{lattice}
+  \citep{boot-package,pastecs-package,lattice}
+  that are automatically downloaded when installing the package
   directly from the internet.
 \end{itemize}
 
@@ -220,7 +231,7 @@ You may inspect this data set as usual, e.g. simply by typing
 example on help page).  Now we invoke the analysis with an important
 optional parameter \texttt{xstart} determining the offset of the main
 peak, e.g.  a value of 55 to neglect winter peaks before the spring
-mass development.  Setting individual values of the optional \code{flag} 
+mass development.  Setting individual values of the optional \code{flag}
 column of the data set manually to FALSE provides another, more individual
 mechanism for this purpose:
 
@@ -284,15 +295,19 @@ The result of the analysis can be written to an arbitrary textfile
 supplied as optional file argument to \texttt{summary}, e.g.:
 
 \begin{Scode}
-> summary(tt, file = "d:/results.txt", sep = "\t", quote = FALSE, row.names = FALSE)
+> summary(tt, file = "d:/results.txt", sep = "\t",
++    quote = FALSE, row.names = FALSE)
 \end{Scode}
 
 or, to write the results directly to the windows clipboard in a format
 compatible to spreadsheets and with German comma:
 
 \begin{Scode}
-> summary(tt, file = "clipboard", sep = "\t", dec = ",", quote = FALSE, row.names = FALSE)
+> summary(tt, file = "clipboard", sep = "\t", dec = ",",
++   quote = FALSE, row.names = FALSE)
 \end{Scode}
+
+\pagebreak{3}
 
 \section{More options}\label{s:moreopt}
 
@@ -369,8 +384,8 @@ y <- exp(cos(x/20)) + 0.3 + rnorm(x, sd = 0.3)
 @
 
 We now apply the \code{peakwindow} function to the x and y data where
-\code{xstart = 60} is an optional value to indicate the start time of the 
-``specific peak'', e.g. the time of ice out after which the phytoplankton 
+\code{xstart = 60} is an optional value to indicate the start time of the
+``specific peak'', e.g. the time of ice out after which the phytoplankton
 spring mass development is expected to begin:
 
 <<>>=

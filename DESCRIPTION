@@ -1,16 +1,16 @@
 Package: cardidates
 Type: Package
 Title: Identification of Cardinal Dates in Ecological Time Series
-Version: 0.4.8
+Version: 0.4.9
 Depends: R (>= 3.2), boot, pastecs, lattice
 Imports: graphics, grDevices, stats, methods, utils
-Encoding: latin1
+Encoding: UTF-8
 Authors@R: c(person("Susanne", "Rolinski", role = "aut"),
-             person("René", "Sachse", role = "aut"),
+             person("RenÃ©", "Sachse", role = "aut"),
              person("Thomas", "Petzoldt", role = c("aut", "cre"),
                      email = "thomas.petzoldt@tu-dresden.de"))
 Author: Susanne Rolinski [aut],
-  René Sachse [aut],
+  RenÃ© Sachse [aut],
   Thomas Petzoldt [aut, cre]
 Maintainer: Thomas Petzoldt <thomas.petzoldt@tu-dresden.de>
 Description: Identification of cardinal dates
@@ -20,6 +20,6 @@ License: GPL (>= 2)
 URL: http://cardidates.r-forge.r-project.org
 LazyData: yes
 NeedsCompilation: no
-Packaged: 2018-06-03 17:19:25 UTC; thpe
+Packaged: 2023-10-07 16:59:41 UTC; thpe
 Repository: CRAN
-Date/Publication: 2018-06-03 19:02:53 UTC
+Date/Publication: 2023-10-07 17:30:02 UTC
